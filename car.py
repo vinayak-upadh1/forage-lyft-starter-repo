@@ -10,6 +10,6 @@ class Car(ABC):
 
     @abstractmethod
     def needs_service(self):
-        return engine_service_check(self.engine) or battery_service_check(self.battery)
+        return self.engine.needs_service() or self.battery.needs_service()
             
         

@@ -6,4 +6,4 @@ class NubbinBattery(Car):
         self.current_date = current_date
         
     def needs_service(self):
-        return self.current_date-self.last_service_date>=4
+        return (self.current_date-self.self.last_service_date)//365.25>=4
