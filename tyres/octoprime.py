@@ -5,4 +5,4 @@ class OctoprimeTyres(Car):
         self.sensor_array = sensor_array
     
     def needs_service(self):
-        return any(value>=3 for value in self.sensor_array) 
+        return sum(self.sensor_array)>=3 
